@@ -1,0 +1,32 @@
+name: Release Addon
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Package Addon for WoWUp and Manual Install
+        run: |
+          mkdir -p DinoMacro
+          cp DinoMacro.toc DinoMacro.lua Localization.lua README.md DinoMacro/
+          zip -r DinoMacro-${{ github.ref_name }}.zip DinoMacro
+          zip -r DinoMacro.zip DinoMacro
+
+      - name: Upload Release Assets to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            DinoMacro-${{ github.ref_name }}.zip
+            DinoMacro.zip
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

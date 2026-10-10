@@ -1,0 +1,11 @@
+# Temporary and OS files
+*.zip
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.bak

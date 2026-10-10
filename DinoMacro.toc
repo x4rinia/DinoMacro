@@ -1,0 +1,13 @@
+## Interface: 120001, 16001, 120000, 16000, 11508, 110005, 110000, 11200
+## Title: DinoMacro 1.4.17 |cff00ccff(by X4rinia)|r
+## Notes: Zauberketten- und Makro-Manager fuer WoW Forever (14 Slots, Cooldown-/Ressourcen-/Reichweitenanzeige, automatische Kampfgruppierung, Drag&Drop Gegenstaende, Petattack, Schmuck). Oeffnen mit /dinomacro oder /dm.
+## Notes-deDE: Zauberketten- und Makro-Manager fuer WoW Forever (14 Slots, Cooldown-/Ressourcen-/Reichweitenanzeige, automatische Kampfgruppierung, Drag&Drop Gegenstaende, Petattack, Schmuck). Oeffnen mit /dinomacro oder /dm.
+## Notes-enUS: Spell sequence and macro manager for WoW Forever (14 slots, cooldown/resource/range status display, automatic combat grouping, Drag&Drop items, petattack, trinkets). Open with /dinomacro or /dm.
+## Author: X4rinia
+## Version: 1.4.17
+## SavedVariablesPerCharacter: DinoMacroDB, DinoMacroManagerDB, DinoMacroManagerForeverDB
+## X-Category: Action Bars, Combat, Macros
+## X-Website: https://github.com/x4rinia/DinoMacro
+
+Localization.lua
+DinoMacro.lua
